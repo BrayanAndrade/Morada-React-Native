@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, SafeAreaView, FlatList, Image, View, StyleSheet } from "react-native";
+import { Text, SafeAreaView, FlatList, Image, View, StyleSheet, StatusBar } from "react-native";
 import Header from '../../Components/Header/index'
 
 
@@ -18,70 +18,48 @@ export default function Sobre(props) {
    ]
 
     const BG_IMG = 'https://images-ext-2.discordapp.net/external/CDTZ9Y1YKIScLr6tRu-ZQa-SaAPOt7zbnYwVJuvm_P0/https/www.wallpapertip.com/wmimgs/172-1725278_1080-x-2340-gradient.jpg?width=228&height=405'
-  return (
-   
-    <SafeAreaView style={styles.container}>
-       <Image
-            source={{uri: BG_IMG}}
-            style={StyleSheet.absoluteFillObject}
-            blurRadius={13}
-        />
-          <FlatList 
-            data={DATA}
-            keyExtractor={item => item.id}
-            renderItem={({item}) => (
-              
-              <View style={styles.box}>
-                <View style={styles.inner}>
-                    <Text style={styles.titulo}> { item.title } </Text>
-                    <Text style={styles.descricao} > { item.description } </Text>
-                </View>       
-             </View>
-            )}
-          />
-         
-      <View>
-          
-      </View>
-    </SafeAreaView>
-  );
-}
+    
+    
+    const SPACING = 20;
+    return <View style={{flex: 1, backgroundColor: '#fff'}}>
 
-const styles = StyleSheet.create({
-  container:{
-    flex: 1,
-    padding: 5,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    backgroundColor: '#dbd0ff',
-  },
-  box:{
-      flex: 1,
-      padding: 5,
+    <Image
+        source={{uri: BG_IMG}}
+        style={StyleSheet.absoluteFillObject}
+        blurRadius={13}
+    />
 
     
-  },
-  inner:{
-      flex: 1,
-      height: 260,
-      backgroundColor: "rgba(255, 255, 255, 0.3)",
-      alignItems: 'center',
-      justifyContent: 'center',
-      textAlign: 'center',
-      borderRadius: 15,
-      marginTop:50
-  },
-  titulo:{
-    fontSize: 35,
-    color: '#fff',
-    marginBottom: 10,
-    fontWeight: 'bold'
-  },
-  descricao:{
-    fontSize: 17,
-    marginBottom: 5,
-    textAlign: 'center',
-    color: '#fff'
-  }
+    <FlatList
+    data={DATA}
+    keyExtractor={item => item.id}
+    contentContainerStyle={{padding: SPACING, paddingTop: StatusBar.currentHeight || 42}}
+    renderItem={({item, index}) => {
 
-})
+
+
+        return <View style={{
+                    flextDirection: 'row',
+                     padding: SPACING,
+                     marginBottom: SPACING,
+                     backgroundColor: 'rgba(255,255,255,0.8)',
+                     borderRadius: 12,
+                     shadowColor: "#000",
+                     shadowOffset:{width: 0, height: 10},
+                     shadowOpacity: .3,
+                     shadowRadius: 20,
+                   
+                }}>
+
+            <View>
+                <Text style={{fontSize:28, fontWeight: '700', textAlign: 'center'}}> {item.title}</Text>
+                <Text style={{fontSize:20, opacity: .7, textAlign: 'center'}}> {item.description} </Text>
+               
+            </View>
+        </View>
+    }}
+/>
+
+
+</View>
+}

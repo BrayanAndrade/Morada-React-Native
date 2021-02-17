@@ -14,6 +14,121 @@ const DATA = [...Array(30).keys()].map((_, i) => {
     };
 });
 
+const dados = [
+    {
+        id: Math.random(),
+        nome: "Rosana",
+        descricao: "Ofereço serviços de troca de chuveiro e pequenos reparos elétricos",
+        bairro: "Vaz Lobo",
+        categoria: "oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Lucas",
+        descricao: "Pedreiro para alvenaria.",
+        bairro: "Terreirão",
+        categoria: "solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Matheus",
+        descricao: "Posso nessa semana ajudar em pequenos reparos na região de bento ribeiro.",
+        bairro: "Bento Ribeiro",
+        categoria: "oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Roberto",
+        descricao: "Ajudo com penas alvenarias em bloco de concreto.",
+        bairro: "Nova aurora",
+        categoria: "oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Brayan",
+        descricao: "Pintura de casa",
+        bairro: "Lote XV",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "João",
+        descricao: "Tenho uma caixa de ferramentas para doar",
+        bairro: "Jacarepaguá",
+        categoria: "oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Wellington",
+        descricao: "Peço ajuda para consertar meu telhado",
+        bairro: "Irajá",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Milene",
+        descricao: "Preciso cimento para terminar de consertar a calçada",
+        bairro: "Pavuna",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Rodrigo",
+        descricao: "Pintura",
+        bairro: "Niterói",
+        categoria: "oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Marcos",
+        descricao: "Preciso de ajuda para executar 2 metros de alvenaria.",
+        bairro: "Nova aurora",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Lucas",
+        descricao: "Mão de obra pintura",
+        bairro: "Terreirão",
+        categoria: "Oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Fernanda",
+        descricao: "Eletricista para instalação de tomadas.",
+        bairro: "Caxias",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Maria Clara",
+        descricao: "Preciso de um carrinho de mão para tirar areia aqui da frente de casa",
+        bairro: "Santa Teresa",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Matheus",
+        descricao: "Posso nessa semana ajudar em pequenos reparos na região de bento ribeiro.",
+        bairro: "Bento Ribeiro",
+        categoria: "oferecendo"
+
+    },
+]
+
 const BG_IMG = 'https://images-ext-2.discordapp.net/external/KDI34rqMPdkobzhlvjm25_YkpxcS38BMTn7k7UJ9uBU/https/i.pinimg.com/originals/4d/e0/c7/4de0c7654c3877c6cfada14fa2d7104f.jpg?width=169&height=300'
 
 const SPACING = 20;
@@ -32,8 +147,8 @@ export default () => {
 
         
         <FlatList
-        data={DATA}
-        keyExtractor={item => item.key}
+        data={dados}
+        keyExtractor={item => item.id}
         contentContainerStyle={{padding: SPACING, paddingTop: StatusBar.currentHeight || 42}}
         renderItem={({item, index}) => {
 
@@ -51,19 +166,12 @@ export default () => {
                          shadowRadius: 20,
                        
                     }}>
-                <Image
-                    source={{uri:item.image}}
-                    style={{
-                        width: AVATAR_SIZE,
-                         height: AVATAR_SIZE,
-                         borderRadius: AVATAR_SIZE, 
-                         marginRight: SPACING / 2
-                    }}/>
 
                 <View>
-                    <Text style={{fontSize:22, fontWeight: '700'}}> {item.name}</Text>
-                    <Text style={{fontSize:18, opacity: .7}}> {item.jobTitle} </Text>
-                    <Text style={{fontSize:22, opacity: .8, color: '#0099cc'}}> {item.email}</Text>
+                    <Text style={{fontSize:22, fontWeight: '700'}}> {item.nome}</Text>
+                    <Text style={{fontSize:18, opacity: .7}}> {item.descricao} </Text>
+                    <Text style={{fontSize:18, opacity: .7, fontWeight: '700'}}> {item.bairro} </Text>
+                    <Text style={{fontSize:22, opacity: .8, color: '#0099cc'}}> {item.categoria}</Text>
                 </View>
             </View>
         }}
