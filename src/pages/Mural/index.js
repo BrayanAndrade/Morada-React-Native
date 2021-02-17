@@ -14,7 +14,7 @@ const DATA = [...Array(30).keys()].map((_, i) => {
     };
 });
 
-const BG_IMG = 'https://images-ext-2.discordapp.net/external/CUYO-45XAYfjeGb11KkNw_knZub1DU9cYDlv8Ll1m94/%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1350%26q%3D80/https/images.unsplash.com/photo-1599422090663-ed3dfa1349d9?width=400&height=267'
+const BG_IMG = 'https://images-ext-2.discordapp.net/external/KDI34rqMPdkobzhlvjm25_YkpxcS38BMTn7k7UJ9uBU/https/i.pinimg.com/originals/4d/e0/c7/4de0c7654c3877c6cfada14fa2d7104f.jpg?width=169&height=300'
 
 const SPACING = 20;
 const AVATAR_SIZE = 70;
@@ -43,7 +43,7 @@ export default () => {
                         flextDirection: 'row',
                          padding: SPACING,
                          marginBottom: SPACING,
-                         backgroundColor: 'rgba(255,255,255,0.9)',
+                         backgroundColor: 'rgba(255,255,255,0.8)',
                          borderRadius: 12,
                          shadowColor: "#000",
                          shadowOffset:{width: 0, height: 10},
@@ -68,5 +68,7 @@ export default () => {
             </View>
         }}
     />
+
+
     </View>
 }

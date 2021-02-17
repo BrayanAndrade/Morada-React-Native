@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
 import{Home, Sobre, Login} from './src/pages'
 import Router from './src/Components/Router/index'
-import Header from './src/Components/Header/index'
+import Header from './src/Components/Header'
 
 
 const Stack = createStackNavigator();
