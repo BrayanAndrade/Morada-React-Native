@@ -21,20 +21,9 @@ const Routes= () => {
                 component = {Home}
                 options={{
                     tabBarLabel: 'Home',
-                    tabBarColor: '#206AFF',
-                    tabBarIcon:({ color }) => (
-                        <Ionicons name="home" color={color} size={26}/>
-                    ),
-                }}
-            />
-            <Tab.Screen 
-                name="Sobre"
-                component = {Sobre}
-                options={{
-                    tabBarLabel: 'Sobre',
                     tabBarColor: '#983DFF',
                     tabBarIcon:({ color }) => (
-                        <Ionicons name="heart" color={color} size={26}/>
+                        <Ionicons name="home" color={color} size={26}/>
                     ),
                 }}
             />
@@ -49,6 +38,18 @@ const Routes= () => {
                     ),
                 }}
             />
+            <Tab.Screen 
+                name="Sobre"
+                component = {Sobre}
+                options={{
+                    tabBarLabel: 'Sobre',
+                    tabBarColor: '#206AFF',
+                    tabBarIcon:({ color }) => (
+                        <Ionicons name="heart" color={color} size={26}/>
+                    ),
+                }}
+            />
+            
             <Tab.Screen 
                 name="Login"
                 component = {Login}
