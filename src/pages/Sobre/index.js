@@ -8,7 +8,7 @@ export default function Sobre(props) {
     const DATA = [{
       id: Math.random(),
       title: 'NOSSA MISSÃO',
-      description: "Somos uma organização que visa o desenvolvimento individual e coletivo de pessoas em situação insustentável de moradia. Neste processo estamos dispostos a melhorar moradias em situação de risco, pequenos reparos em toda parte de uma residência. Sempre utilizando métodos construtivos que irão efetivamente reparar um problema e mudar as condições de bem estar dessas pessoas."
+      description: "Somos uma organização que visa o desenvolvimento individual e coletivo de pessoas em situação insustentável de moradia. Neste processo estamos dispostos a melhorar moradias em situação de risco, pequenos reparos em toda parte de uma residência. "
     },
     {
       id: Math.random(),
@@ -17,16 +17,16 @@ export default function Sobre(props) {
     }
    ]
 
-    const BG_IMG = 'https://images-ext-2.discordapp.net/external/CDTZ9Y1YKIScLr6tRu-ZQa-SaAPOt7zbnYwVJuvm_P0/https/www.wallpapertip.com/wmimgs/172-1725278_1080-x-2340-gradient.jpg?width=228&height=405'
+    const BG_IMG = 'https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
     
     
     const SPACING = 20;
-    return <View style={{flex: 1, backgroundColor: '#fff'}}>
+    return <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
 
     <Image
         source={{uri: BG_IMG}}
         style={StyleSheet.absoluteFillObject}
-        blurRadius={13}
+        // blurRadius={1}
     />
 
     
@@ -38,28 +38,28 @@ export default function Sobre(props) {
 
 
 
-        return <View style={{
+        return <SafeAreaView  style={{
                     flextDirection: 'row',
                      padding: SPACING,
                      marginBottom: SPACING,
-                     backgroundColor: 'rgba(255,255,255,0.8)',
+                     backgroundColor: 'rgba(255,255,255,0.4)',
                      borderRadius: 12,
-                     shadowColor: "#000",
-                     shadowOffset:{width: 0, height: 10},
-                     shadowOpacity: .3,
-                     shadowRadius: 20,
-                   
+                     borderColor:'white',
+                     borderLeftWidth:1,
+                     borderTopWidth:1,
+                     blurRadius: '20',
+                     
                 }}>
 
-            <View>
-                <Text style={{fontSize:28, fontWeight: '700', textAlign: 'center'}}> {item.title}</Text>
-                <Text style={{fontSize:20, opacity: .7, textAlign: 'center'}}> {item.description} </Text>
+            <SafeAreaView>
+                <Text style={{fontSize:28, fontWeight: 'bold', textAlign: 'center',}}> {item.title}</Text>
+                <Text style={{fontSize:21,   }}> {item.description} </Text>
                
-            </View>
-        </View>
+            </SafeAreaView>
+        </SafeAreaView>
     }}
 />
 
 
-</View>
+</SafeAreaView>
 }

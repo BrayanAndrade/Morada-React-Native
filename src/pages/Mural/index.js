@@ -17,97 +17,97 @@ const DATA = [...Array(30).keys()].map((_, i) => {
 const dados = [
     {
         id: Math.random(),
-        nome: "Rosana",
+        nome: "Rosana Vieira",
         descricao: "Ofereço serviços de troca de chuveiro e pequenos reparos elétricos",
-        bairro: "Vaz Lobo",
-        categoria: "oferecendo"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Lucas",
-        descricao: "Pedreiro para alvenaria.",
-        bairro: "Terreirão",
-        categoria: "solicitando"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Matheus",
-        descricao: "Posso nessa semana ajudar em pequenos reparos na região de bento ribeiro.",
-        bairro: "Bento Ribeiro",
-        categoria: "oferecendo"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Roberto",
-        descricao: "Ajudo com penas alvenarias em bloco de concreto.",
-        bairro: "Nova aurora",
-        categoria: "oferecendo"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Brayan",
-        descricao: "Pintura de casa",
-        bairro: "Lote XV",
-        categoria: "Solicitando"
-
-    },
-    {
-        id: Math.random(),
-        nome: "João",
-        descricao: "Tenho uma caixa de ferramentas para doar",
-        bairro: "Jacarepaguá",
-        categoria: "oferecendo"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Wellington",
-        descricao: "Peço ajuda para consertar meu telhado",
-        bairro: "Irajá",
-        categoria: "Solicitando"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Milene",
-        descricao: "Preciso cimento para terminar de consertar a calçada",
-        bairro: "Pavuna",
-        categoria: "Solicitando"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Rodrigo",
-        descricao: "Pintura",
-        bairro: "Niterói",
-        categoria: "oferecendo"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Marcos",
-        descricao: "Preciso de ajuda para executar 2 metros de alvenaria.",
-        bairro: "Nova aurora",
-        categoria: "Solicitando"
-
-    },
-    {
-        id: Math.random(),
-        nome: "Lucas",
-        descricao: "Mão de obra pintura",
-        bairro: "Terreirão",
+        bairro: "R. Linda Batista",
         categoria: "Oferecendo"
 
     },
     {
         id: Math.random(),
-        nome: "Fernanda",
+        nome: "Lucas Moreira",
+        descricao: "Pedreiro para alvenaria.",
+        bairro: "Av. Aílton Henrique da Costa",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Matheus Paulo",
+        descricao: "Posso nessa semana ajudar em pequenos reparos na região de bento ribeiro.",
+        bairro: "Av. José Luiz Ferraz",
+        categoria: "Oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Roberto Correia",
+        descricao: "Ajudo com penas alvenarias em bloco de concreto.",
+        bairro: "R. Adina Mera",
+        categoria: "Oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Brayan Andrade",
+        descricao: "Pintura de casa",
+        bairro: "R. Sandro Moreira",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "João Paulo",
+        descricao: "Tenho uma caixa de ferramentas para doar",
+        bairro: "R. Gicondo Dias",
+        categoria: "Oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Wellington Ferreira",
+        descricao: "Peço ajuda para consertar meu telhado",
+        bairro: "R. Guernica",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Milene Almeida",
+        descricao: "Preciso cimento para terminar de consertar a calçada",
+        bairro: "R. Origenes Lessa",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Rodrigo Andrade",
+        descricao: "Pintura",
+        bairro: "Av. Teotonio Viléla ",
+        categoria: "Oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Marcos Antonio",
+        descricao: "Preciso de ajuda para executar 2 metros de alvenaria.",
+        bairro: "R. Gilberto Freire",
+        categoria: "Solicitando"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Lucas Moreira",
+        descricao: "Mão de obra pintura",
+        bairro: "R. Gicondo Dias",
+        categoria: "Oferecendo"
+
+    },
+    {
+        id: Math.random(),
+        nome: "Fernanda Carla",
         descricao: "Eletricista para instalação de tomadas.",
-        bairro: "Caxias",
+        bairro: "R. Sandro Moreira",
         categoria: "Solicitando"
 
     },
@@ -115,21 +115,23 @@ const dados = [
         id: Math.random(),
         nome: "Maria Clara",
         descricao: "Preciso de um carrinho de mão para tirar areia aqui da frente de casa",
-        bairro: "Santa Teresa",
+        bairro: "R. Alberto Bianchi",
         categoria: "Solicitando"
 
     },
     {
         id: Math.random(),
-        nome: "Matheus",
+        nome: "Matheus Santana",
         descricao: "Posso nessa semana ajudar em pequenos reparos na região de bento ribeiro.",
-        bairro: "Bento Ribeiro",
-        categoria: "oferecendo"
+        bairro: "R. Manoel Bouncher Pinto",
+        categoria: "Oferecendo"
 
     },
 ]
 
-const BG_IMG = 'https://images-ext-2.discordapp.net/external/KDI34rqMPdkobzhlvjm25_YkpxcS38BMTn7k7UJ9uBU/https/i.pinimg.com/originals/4d/e0/c7/4de0c7654c3877c6cfada14fa2d7104f.jpg?width=169&height=300'
+//https://images-ext-2.discordapp.net/external/KDI34rqMPdkobzhlvjm25_YkpxcS38BMTn7k7UJ9uBU/https/i.pinimg.com/originals/4d/e0/c7/4de0c7654c3877c6cfada14fa2d7104f.jpg?width=169&height=300
+
+const BG_IMG = 'https://www.wallpapertip.com/wmimgs/193-1930168_4k-white-brickwall-close-up-white-bricks-bricks.jpg'
 
 const SPACING = 20;
 const AVATAR_SIZE = 70;
@@ -142,7 +144,7 @@ export default () => {
         <Image
             source={{uri: BG_IMG}}
             style={StyleSheet.absoluteFillObject}
-            blurRadius={13}
+            // blurRadius={1}
         />
 
         
@@ -158,7 +160,7 @@ export default () => {
                         flextDirection: 'row',
                          padding: SPACING,
                          marginBottom: SPACING,
-                         backgroundColor: 'rgba(255,255,255,0.8)',
+                         backgroundColor: 'rgba(255,255,255,0.7)',
                          borderRadius: 12,
                          shadowColor: "#000",
                          shadowOffset:{width: 0, height: 10},
@@ -168,10 +170,10 @@ export default () => {
                     }}>
 
                 <View>
-                    <Text style={{fontSize:22, fontWeight: '700'}}> {item.nome}</Text>
-                    <Text style={{fontSize:18, opacity: .7}}> {item.descricao} </Text>
-                    <Text style={{fontSize:18, opacity: .7, fontWeight: '700'}}> {item.bairro} </Text>
-                    <Text style={{fontSize:22, opacity: .8, color: '#0099cc'}}> {item.categoria}</Text>
+                    <Text style={{fontSize:26, fontWeight: '700', marginBottom: 5}}> {item.nome}</Text>
+                    <Text style={{fontSize:20, opacity: .7, marginBottom: 20}}> {item.descricao} </Text>
+                    <Text style={{fontSize:18, opacity: .6, fontWeight: '700', marginBottom: 5}}> {item.bairro} </Text>
+                    <Text style={{fontSize:22, opacity: .9, color: '#fff', backgroundColor: '#3179FF', borderRadius: 30, width: 150, textAlign: 'center', marginLeft: 80, }}> {item.categoria}</Text>
                 </View>
             </View>
         }}

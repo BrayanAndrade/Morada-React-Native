@@ -13,15 +13,14 @@ const Tab = createMaterialBottomTabNavigator();
 const Routes= () => {
     return(
 
-
-
         <Tab.Navigator inactiveColor="rgba(255, 255, 255, 0.5)" activeColor="#fff">
             <Tab.Screen 
                 name="Home"
                 component = {Home}
                 options={{
                     tabBarLabel: 'Home',
-                    tabBarColor: '#983DFF',
+                    //#983DFF
+                    tabBarColor: '#232323',
                     tabBarIcon:({ color }) => (
                         <Ionicons name="home" color={color} size={26}/>
                     ),
@@ -32,18 +31,21 @@ const Routes= () => {
                 component = {Mural}
                 options={{
                     tabBarLabel: 'Mural',
-                    tabBarColor: '#FF7B3D',
+                    //#FF7B3D
+                    tabBarColor: '#206AFF',
                     tabBarIcon:({ color }) => (
-                        <Ionicons name="construct" color={color} size={24}/>
+                        <Ionicons name="construct" color={color} size={26}/>
                     ),
                 }}
             />
+
+
             <Tab.Screen 
                 name="Sobre"
                 component = {Sobre}
                 options={{
                     tabBarLabel: 'Sobre',
-                    tabBarColor: '#206AFF',
+                    tabBarColor: '#FF6800',
                     tabBarIcon:({ color }) => (
                         <Ionicons name="heart" color={color} size={26}/>
                     ),
