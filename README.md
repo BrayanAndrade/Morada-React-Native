@@ -1,5 +1,5 @@
 # Morada-React-Native
 
-## ScreenShot
+## Screenshot
 
 <img width="30%" src="morada.gif">
