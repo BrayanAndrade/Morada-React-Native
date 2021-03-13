@@ -2,4 +2,4 @@
 
 ## ScreenShot
 
-<img width="30%" src="moradagif.gif">
+<img width="30%" src="morada.gif">
